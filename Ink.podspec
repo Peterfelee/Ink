@@ -74,14 +74,14 @@ Pod::Spec.new do |spec|
   #
 
   # 【非常重要】Swift 版本
-  s.swift_version = '5.0'
+  spec.swift_version = '5.0'
   
   # 支持的平台
-  s.ios.deployment_target = '13.0'
+  spec.ios.deployment_target = '13.0'
 
   # 【最关键的一步】关联源码路径
   # SPM 默认路径通常是 Sources/你的库名/**/*
   # 这里的路径是相对于 .podspec 文件所在的目录
-  s.source_files = 'Sources/Ink/API/*.swift'
+  spec.source_files = 'Sources/Ink/API/*.swift'
 
 end
