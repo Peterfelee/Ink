@@ -26,8 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
                   Ink is a library for iOS development.
-                  It is a library for iOS development.
-                  It is a library for iOS development.
+                  DESC
 
   spec.homepage     = "https://github.com/Peterfelee/Ink.git"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -55,25 +54,6 @@ Pod::Spec.new do |spec|
   #
 
   spec.author             = { "peterlee" => "925460675@qq.com" }
-  # Or just: spec.author    = "peterlee"
-  # spec.authors            = { "peterlee" => "925460675@qq.com" }
-  # spec.social_media_url   = "https://twitter.com/peterlee"
-
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
-
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
-  # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
-  # spec.tvos.deployment_target = "9.0"
-  # spec.visionos.deployment_target = "1.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -98,50 +78,10 @@ Pod::Spec.new do |spec|
   
   # 支持的平台
   s.ios.deployment_target = '13.0'
-  # s.osx.deployment_target = '10.15' # 如果支持 macOS
 
   # 【最关键的一步】关联源码路径
   # SPM 默认路径通常是 Sources/你的库名/**/*
   # 这里的路径是相对于 .podspec 文件所在的目录
   s.source_files = 'Sources/Ink/API/*.swift'
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
-
-  # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
-
-  # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-
-  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Link your library with frameworks, or libraries. Libraries do not include
-  #  the lib prefix of their name.
-  #
-
-  # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
-
-  # spec.library   = "iconv"
-  # spec.libraries = "iconv", "xml2"
-
-
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If your library depends on compiler flags you can set them in the xcconfig hash
-  #  where they will only apply to your library. If you depend on other Podspecs
-  #  you can include multiple dependencies to ensure it works.
-
-  # spec.requires_arc = true
-
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
 
 end
