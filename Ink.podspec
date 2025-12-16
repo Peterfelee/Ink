@@ -39,8 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -82,6 +81,6 @@ Pod::Spec.new do |spec|
   # 【最关键的一步】关联源码路径
   # SPM 默认路径通常是 Sources/你的库名/**/*
   # 这里的路径是相对于 .podspec 文件所在的目录
-  spec.source_files = 'Sources/Ink/API/*.swift'
+  spec.source_files = 'Sources/Ink/**/*'
 
 end
